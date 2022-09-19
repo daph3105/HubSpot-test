@@ -6,10 +6,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: HubSpot CMS Deploy
-        uses: HubSpot/hubspot-cms-deploy-action@v1.6
+      - name: Checkout
+        uses: actions/checkout@v2.3.3
       - name: HubSpot Deploy Action
-        uses: HubSpot/hubspot-cms-deploy-action@v1.5
+        uses: HubSpot/hubspot-cms-deploy-action@v1.6
         with:
           src_dir: resources
           dest_dir: github-deploy
